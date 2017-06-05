@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title>个人信息</title>  
+    <link rel="stylesheet" href="/LearningSystem/Public/css/pintuer.css">
+    <link rel="stylesheet" href="/LearningSystem/Public/css/admin.css">
+    <script src="/LearningSystem/Public/js/jquery.js"></script>
+    <script src="/LearningSystem/Public/js/pintuer.js"></script>  
+</head>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 修改个人信息</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="__APP__/User/do_modify">
+      <div class="form-group">
+        <div class="label">
+          <label>姓名：</label>
+        </div>
+        <div class="field">
+          <input type="text" id="url1" name="name" class="input tips" style="width:25%; float:left;" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>密码：</label>
+        </div>
+        <div class="field">
+          <input type="text" id="url1" name="password" class="input tips" style="width:25%; float:left;"  />
+        </div>
+      </div>
+	  <div class="form-group">
+        <div class="label">
+          <label>重复密码：</label>
+        </div>
+        <div class="field">
+          <input type="text" id="url1" name="repassword" class="input tips" style="width:25%; float:left;"  />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>性别：</label>
+        </div>
+        <div class="field">
+          <input type="text" id="url1" name="sex" class="input tips" style="width:25%; float:left;" />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit" name="sub"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</body></html>

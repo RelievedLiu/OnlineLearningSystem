@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'score_id', 1 => 'score_name', 2 => 'score_belong', 3 => 'score_score', 4 => 'score_time', '_autoinc' => true, '_pk' => 'score_id', '_type' => array ( 'score_id' => 'int(11)', 'score_name' => 'varchar(11)', 'score_belong' => 'int(11)', 'score_score' => 'int(10)', 'score_time' => 'varchar(50)', ), );?>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title>学生在线测试</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+       <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+      <script src="__PUBLIC__/js/jquery-1.11.1.js"></script>
+      <!-- 包括所有已编译的插件 -->
+      <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+   	<div class="container">
+   		
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					 
+					 <ul id="myTab" class="nav nav-tabs">
+						<li class="active">
+							<a href="#test" data-toggle="tab">
+								查看试题
+							</a>
+						</li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active" id="test">
+							
+							<center>
+							<form action="/LearningSystem/admin.php/Onlinetest/doselect" method="post">
+								<table id="tbmenu">
+								<tr>
+								<td>
+								请选择所属套题：<select name="belong">
+								<volist name="data" id="vo">
+									<option value ="{$vo.belong_id}">{$vo.belong_name}</option>
+								</volist>	
+								</select>
+								</td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td><input type="submit" name="sub" value="查询" ></a></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td><a href="/LearningSystem/admin.php/Onlinetest/testadd"><input type="button" name="subadd" value="添加试题"></a></td>
+								</tr>
+								 </table>
+						 </form>
+							</center>		
+						</div>
+					</div>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					 	 
+					</div>
+				</div>
+			</div>
+		</div>
+     	
+   	</div>
+    </div>
+
+     
+   </body>
+</html>
+
+
+
+
+
+
+

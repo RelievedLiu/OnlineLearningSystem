@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'belong_id', 1 => 'belong_name', '_autoinc' => true, '_pk' => 'belong_id', '_type' => array ( 'belong_id' => 'int(11)', 'belong_name' => 'varchar(50)', ), );?>

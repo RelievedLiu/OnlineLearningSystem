@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'wid', 1 => 'path', 2 => 'create_time', 3 => 'sid', '_autoinc' => true, '_pk' => 'wid', '_type' => array ( 'wid' => 'int(11)', 'path' => 'text', 'create_time' => 'int(9)', 'sid' => 'varchar(30)', ), );?>

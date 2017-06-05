@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$id}</title>
+    <script type="text/javascript" src="/LearningSystem/Public/js/pdfobject.min.js"></script>
+    <style type="text/css">
+        .pdfobject-container { height: 650px;}
+        .pdfobject { border: 1px solid #666; }
+    </style>
+</head>
+<body>
+<div id="example1"></div>
+<script type="text/javascript">
+    PDFObject.embed("/LearningSystem/Public/upload/lab/{$id}.pdf", "#example1");
+</script>
+</body>
+</html>

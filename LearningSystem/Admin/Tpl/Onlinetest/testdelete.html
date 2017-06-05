@@ -1,0 +1,24 @@
+﻿<form action="/LearningSystem/admin.php/Onlinetest/dotestedit" method="post">
+					 <table id="tb_teaadd">
+					<tr>
+						<td>考题内容：</td>
+						<td><textarea rows="4" cols="65" scrollbars="true" class="txtarea" name="txtcont">{$data[0]['ktinfo_cont']}</textarea></td>
+					</tr>
+					<br/>
+					<tr>
+						<td>考题选项：</td>
+						<td>A选项：<input type="text" name="txta" size="60" value="{$data[0]['ktinfo_a']}"><a id='beizhu'>&nbsp;(书写形式如：A.HTTP)</a><br/><br/>
+							B选项：<input type="text" name="txtb" size="60" value="{$data[0]['ktinfo_b']}"><a id='beizhu'>&nbsp;(书写形式如：B.FTP)</a><br/><br/>
+							C选项：<input type="text" name="txtc" size="60" value="{$data[0]['ktinfo_c']}"><a id='beizhu'>&nbsp;(书写形式如：C.UDP)</a><br/><br/>
+							D选项：<input type="text" name="txtd" size="60" value="{$data[0]['ktinfo_d']}"><a id='beizhu'>&nbsp;(书写形式如：D.TCP)</a></textarea></td>
+					</tr>
+					<br/>
+					<tr>
+					<td>考题答案：</td>
+						<td><input type="text" name="txtanswer" size="2" value="{$data[0]['ktinfo_answer']}"><a id='beizhu'>&nbsp;(书写形式如：A)</a></td>
+					</tr>
+					</table>
+					  <br/>
+						<center><input type="submit" name="sub" value="提交"></center>
+						
+					</form>

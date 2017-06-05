@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'bookname', 2 => 'author', 3 => 'publication', 4 => 'path', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(11)', 'bookname' => 'varchar(255)', 'author' => 'varchar(255)', 'publication' => 'varchar(255)', 'path' => 'varchar(255)', ), );?>

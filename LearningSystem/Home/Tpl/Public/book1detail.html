@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title>图书1详细介绍</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="alternate icon" type="image/png" href="__PUBLIC__/assets/i/favicon.png">
+       <link rel="stylesheet" href="__PUBLIC__/assets/css/amazeui.min.css"/>
+	   <script src="__PUBLIC__/assets/js/jquery.min.js"></script>
+		<!--<![endif]-->
+		<script src="__PUBLIC__/assets/js/amazeui.min.js"></script>
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+       <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+      <script src="__PUBLIC__/js/jquery-1.11.1.js"></script>
+      <!-- 包括所有已编译的插件 -->
+      <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+	  <script>
+			function  jump()
+			{
+				window.location="__URL__/search";
+			}
+		</script>
+      <style type="text/css">
+      	#myCarousel{
+      		margin-top:-20px;
+      	}
+      	#showcontent{
+      		margin-top:20px;
+      	}
+      	p{
+      		line-height:1.5;
+      	}
+      	 	 @media only screen and (min-width: 641px) {
+      .am-offcanvas {
+        display: block;
+        position: static;
+        background: none;
+      }
+
+      .am-offcanvas-bar {
+        position: static;
+        width: auto;
+        background: none;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      .am-offcanvas-bar:after {
+        content: none;
+      }
+
+    }
+
+    @media only screen and (max-width: 640px) {
+      .am-offcanvas-bar .am-nav>li>a {
+        color:#ccc;
+        border-radius: 0;
+        border-top: 1px solid rgba(0,0,0,.3);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.05)
+      }
+
+      .am-offcanvas-bar .am-nav>li>a:hover {
+        background: #404040;
+        color: #fff
+      }
+
+      .am-offcanvas-bar .am-nav>li.am-nav-header {
+        color: #777;
+        background: #404040;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+        text-shadow: 0 1px 0 rgba(0,0,0,.5);
+        border-top: 1px solid rgba(0,0,0,.3);
+        font-weight: 400;
+        font-size: 75%
+      }
+
+      .am-offcanvas-bar .am-nav>li.am-active>a {
+        background: #1a1a1a;
+        color: #fff;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+      }
+
+      .am-offcanvas-bar .am-nav>li+li {
+        margin-top: 0;
+      }
+    }
+
+    .my-head {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .my-button {
+      position: fixed;
+      top: 0;
+      right: 0;
+      border-radius: 0;
+    }
+    .my-sidebar {
+      padding-right: 0;
+      border-right: 1px solid #eeeeee;
+    }
+
+    .my-footer {
+      border-top: 1px solid #eeeeee;
+      padding: 10px 0;
+      margin-top: 10px;
+      text-align: center;
+	  }
+      </style>
+   </head>
+   <body>
+   	<div class="container">
+   		<!--banner-->
+   		<div id="banner" class="row">
+   			<div class="col-lg-6">
+   			 <img src="__PUBLIC__/images/logo.jpg">
+   			</div>
+			<div class="col-lg-2">
+				<div id="tp-weather-widget" class="xc"></div>
+			</div>
+   			<div class="col-lg-4">
+   				<ul class="nav navbar-nav navbar-right">
+   					<li><a href="__APP__/User/personinfo"><span class="glyphicon glyphicon-user"></span>你好，{$Think.session.name}！</a></li>
+   					<li><a href="/LearningSystem/index.php/Login/do_logout"><span class="glyphicon glyphicon-log-out"></span>退出</a></li>
+   				</ul>
+   			</div>
+     	</div>
+     	<!--banner end-->
+     	<!--navbar-->
+     	<div class="row">
+   			<div class="col-lg-12">
+   			<div class="navbar navbar-default collapse navbar-collapse">
+   			 <ul class="nav nav-tabs navbar-nav">
+   			 <li><a href="__APP__/Index/index">网站首页</a></li>
+			 <li><a href="__APP__/Public/video">在线视频</a></li>
+			 <li><a href="__APP__/Public/ppt">教学课件</a></li>
+			 <li><a href="__APP__/Public/ebook">电子书籍</a></li>
+			 <li><a href="__APP__/User/upload">作业上传</a></li>
+   			 <li><a href="__APP__/Onlinetest/onlinetest">在线测试</a></li>
+			 <li><a href="__APP__/Message/message">留言板</a></li>
+			 <li><a href="__APP__/Public/learningarea">学习园地</a></li>
+   			 </ul>
+			 
+			 
+   			 <form class="navbar-form navbar-right" role="search"  action="/test/index.php/Public/dosearch" method="post" >
+			 <div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search" name="username">
+			 </div>
+			 <button type="submit" class="btn btn-default">
+			 	<span class="glyphicon glyphicon-search"></span> Search
+			 </button>
+			 </form>
+   			</div>
+   			</div>
+     	</div>
+     	<!--navbar end-->
+     	<!--article content-->
+		
+		
+		
+		<header class="am-g my-head">
+  <div class="am-u-sm-12 am-article">
+    <h1 class="am-article-title">Java开发实战经典</h1>
+    <p class="am-article-meta">李兴华</p>
+  </div>
+</header>
+<hr class="am-article-divider"/>
+<div class="am-g am-g-fixed">
+  <div class="am-u-md-9 am-u-md-push-3">
+    <div class="am-g">
+      <div class="am-u-sm-11 am-u-sm-centered">
+        <div class="am-cf am-article">
+          <div class="am-align-left">
+            <img src="__PUBLIC__/images/java03.jpg" alt="" width="100">
+          </div>
+          <div>
+          
+          </div>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《Java开发实战经典》是2009年清华大学出版社出版的图书，作者是李兴华。该书是一本综合讲解Java核心技术的书籍，在书中使用大量的代码及案例进行知识点的分析与运用，并且给出一些比较成熟的开发步骤，帮助读者更好地进行Java的开发。</p>
+          <hr class="am-article-divider">
+          <h2>作者简介</h2>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;李兴华，知名Java培训讲师，Java EE高端培训讲师，北京MLDN软件实训中心教学总监、首席讲师，中科软通项目经理，赛迪网职业特邀讲师，51CTO知名专家。8年软件开发经验，5年高端培训经验，先后为40多家大中型企业做过培训，在Java培训方面享有很高的知名度。</p>
+          <hr class="am-article-divider">
+          <h2>内容简介</h2>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《从作者多年的Java培训经验来看，大部分学生对各种高端开发都没有任何问题，唯一的问题在于Java基础并不牢固，而且在国内也始终没有一本真正可以引领读者入门的好书籍，大部分的书籍都是围绕概念本身进行讲解的，没有讲解清楚为什么要具备这些知识以及该如何去理解这些知识。本书真正地做到了让每一位读者都能清楚地知道每个知识点的来龙去脉，不仅可以很容易地看懂一个程序，而且能真正地灵活运用程序，编写代码。</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在学习编程语言时，环境、代码调试等，都是很多读者最头疼的地方，而且很多代码都会存在一些细节上的问题，所以，本书为了让读者可以更好地理解每一个知识点，将书中所有内容都录制成了视频，让每一位读者真正做到“轻松学Java、从零开始学Java”，以优质的视频教学为每一位读者提供最大的支持。</p> 
+		  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“注意”、“提示”、“问答”是本书的一大特色，通过这样的方式，可以让读者进行更加全面的思考，这些特色中还包含了不少在Java面试中有可能遇到的问题，这让每位读者在打好基础、巩固技术之余，也能为面试提供强有力的支持。</p>
+        </div>
+        <hr/>
+      </div>
+    </div>
+  </div>
+  <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+    <div class="am-offcanvas" id="sidebar">
+      <div class="am-offcanvas-bar">
+        <ul class="am-nav">
+          <li  class="am-nav-header"><h3 class="text-success">作者简介</h3></li>
+          <li  class="am-nav-header"><h3 class="text-success">内容简介</h3></li>
+		  <hr/>
+          <li><a href="/LearningSystem/index.php/Download/download">下载</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <a href="#sidebar" class="am-btn am-btn-sm am-btn-success am-icon-bars am-show-sm-only my-button" data-am-offcanvas><span class="am-sr-only">侧栏导航</span></a>
+</div>
+	<!--article end-->
+
+     	<!--footer-->
+     	<footer class="my-footer">
+		  <p>河南中医药大学<br><small> Copyright Institute of Information formation Technology.</small></p>
+		</footer>
+     	<!--footer end-->
+   	</div>
+    </div>
+
+     
+   </body>
+</html>
+
+
+
+
+
+
+

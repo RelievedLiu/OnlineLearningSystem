@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'admin_id', 1 => 'admin_name', 2 => 'admin_sex', 3 => 'admin_pwd', '_autoinc' => false, '_pk' => 'admin_id', '_type' => array ( 'admin_id' => 'char(20)', 'admin_name' => 'varchar(30)', 'admin_sex' => 'char(4)', 'admin_pwd' => 'varchar(50)', ), );?>

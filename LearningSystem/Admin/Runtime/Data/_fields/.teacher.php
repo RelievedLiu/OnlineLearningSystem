@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'teacher_id', 1 => 'teacher_name', 2 => 'teacher_sex', 3 => 'teacher_pwd', 4 => 'teacher_tno', '_autoinc' => false, '_pk' => 'teacher_id', '_type' => array ( 'teacher_id' => 'char(20)', 'teacher_name' => 'varchar(30)', 'teacher_sex' => 'char(4)', 'teacher_pwd' => 'varchar(50)', 'teacher_tno' => 'char(20)', ), );?>
